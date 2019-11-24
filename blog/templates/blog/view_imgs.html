@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imagens</title>
+</head>
+	<body>	
+		<img src="{% static 'blog/img/django_one.png' %}" height="500" width="1200">	
+		<br>
+		<img src="{% static 'blog/img/django_two.jpeg' %}" height="500" width="1200">	
+
+		{% for post in posts %}
+			{{post.titulo}}
+			<img height="400" width="400" src="{{ post.imagem.url }}">
+		{% endfor %}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Send Image</title>
+</head>
+	<body>	
+		{% for post in posts %}
+			<h3>{{post.titulo}}</h3>
+			<p>{{post.data}}</p>
+			<img height="400" width="500" src="{{ post.imagem.url }}">
+			<p>{{post.text}}</p>
+		{% endfor %}
+	</body>
+</html>
