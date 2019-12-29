@@ -9,7 +9,6 @@ from django.views.static import serve
 
 urlpatterns = [
 	path('', views.view_imgs, name='view_imgs'),
-	path('view_graph', views.view_graph, name='view_graph'),
 	path('post_list', views.post_list, name='post_list'),
 ]
 
